@@ -1,0 +1,20 @@
+cache: redis
+
+spring:
+  application:
+    name: ms-api-customers
+  cache:
+    type: redis
+    redis:
+      time-to-live: 600000
+      cache-null-values: false
+      use-key-prefix: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
