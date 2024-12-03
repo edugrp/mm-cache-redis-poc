@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @Service
 public class CustomerService {
-    private final List<Customer> sample = new ArrayList<Customer>(Arrays.asList(new Customer(1, "John", "Smith", 0),
+    private final List<Customer> sample = new ArrayList<>(Arrays.asList(new Customer(1, "John", "Smith", 0),
             new Customer(2, "James", "Miller", 0),
             new Customer(3, "Maria", "Campbell", 0)));
 

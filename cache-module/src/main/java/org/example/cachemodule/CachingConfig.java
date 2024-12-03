@@ -31,7 +31,6 @@ public class CachingConfig {
             case local -> createLocalCacheManager();
             case ehcache -> createEhCacheManager();
             case redis -> createRedisCacheManager(connectionFactory);
-            default -> throw new IllegalStateException("Unexpected value: " + cacheImplementation);
         };
     }
 

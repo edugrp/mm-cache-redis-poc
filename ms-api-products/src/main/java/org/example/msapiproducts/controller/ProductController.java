@@ -11,8 +11,8 @@ public class ProductController {
 
     private final ProductService productService;
 
-    public ProductController(ProductService productService, ProductService productService1) {
-        this.productService = productService1;
+    public ProductController(ProductService productService) {
+        this.productService = productService;
     }
 
     @GetMapping("/product/{id}")

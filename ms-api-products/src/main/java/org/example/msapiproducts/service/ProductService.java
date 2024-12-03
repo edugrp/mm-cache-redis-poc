@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @Service
 public class ProductService {
-    private final List<Product> sample = new ArrayList<Product>(
+    private final List<Product> sample = new ArrayList<>(
             Arrays.asList(new Product(1, "Product A"),
                     new Product(2, "Product B"),
                     new Product(3, "Product C"))
